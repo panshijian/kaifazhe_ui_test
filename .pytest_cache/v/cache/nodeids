@@ -1,0 +1,6 @@
+[
+  "Scritps/test_dev_login.py::Test_Dev_Login::()::test_login[17778159086-123456-u553582]",
+  "Scritps/test_dev_login.py::Test_Dev_Login::()::test_login[17778159086-12345-\\u767b\\u5f55]",
+  "Scritps/test_dev_login.py::Test_Dev_Login::()::test_failure[17778159086-123456-u553582]",
+  "Scritps/test_dev_login.py::Test_Dev_Login::()::test_failure[17778159086-12345-\\u767b\\u5f55]"
+]

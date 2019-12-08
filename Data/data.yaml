@@ -1,0 +1,44 @@
+# 对象
+#animal : ptes
+#
+#animal1 : {data: pets}
+
+# 数组
+#data :
+#  - 123
+#  - 456
+# 返回：{'data': [123, 456]}
+
+#data :
+#  - pwd : 123
+#  - name : 456
+# 返回：{'data': [{'pwd': 123}, {'name': 456}]}
+
+#data :
+#  - pwd : 123
+#  - name : 456
+#  - data_list : [7,8,9]
+# 返回：{'data': [{'pwd': 123}, {'name': 456}, {'data_list': [7, 8, 9]}]}
+
+# 纯量
+# 小数，浮点数
+#data:
+#  data_int: 123
+#  data_floater: 123.123
+#布尔值
+#data_bool:
+#  data_true: true
+#  data_false: false
+#空值 ~
+#data_null :
+#  null_01: ~  # python 中 None
+#  null_02: None  # 当成 字符串
+#  null_03 : null # python 中 None
+#  null_04 : Null # python 中None
+#  null_05 : ""  # 字符串""
+#  null_06 : " " # 字符串 " "
+
+# 日期
+data_data:
+  ymd : 2019-12-06  # {'data_data': {'ymd': datetime.date(2019, 12, 6)}}
+  ymdhms : 2019-12-06 23:01:30  # {'data_data': {'ymd': datetime.date(2019, 12, 6), 'ymdhms': datetime.datetime(2019, 12, 6, 23, 1, 30)}}

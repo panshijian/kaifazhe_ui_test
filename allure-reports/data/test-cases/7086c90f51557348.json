@@ -1,0 +1,66 @@
+{
+  "uid" : "7086c90f51557348",
+  "name" : "Test_Dev_Login.test_failure[17778159086-12345-\\u767b\\u5f55]",
+  "fullName" : "Scritps.test_dev_login.Test_Dev_Login.test_failure[17778159086-12345-\\u767b\\u5f55]",
+  "historyId" : "c5d0723ecf7925b01859c720e7d1e76d",
+  "time" : {
+    "start" : 1575789643430,
+    "stop" : 1575789699702,
+    "duration" : 56272
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "TimeoutException: Message: \n",
+  "statusTrace" : "self = <class 'Scritps.test_dev_login.Test_Dev_Login'>\n\n    def setup_class(self):\n        self.DL = Page_Dev(get_driver(\"io.manong.developerdaily\",\"io.toutiao.android.ui.activity.LaunchActivity\"))\n        # 使用 首页启动连续从右往左滑动方法\n        for i in range(3):\n            self.DL.scoll_left()\n        # 使用首页 点击申请独家号 按钮方法\n>       self.DL.click_primary()\n\nScritps\\test_dev_login.py:26: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nPageTest\\dev_title.py:23: in click_primary\n    self.click_element(PageTest.primary_btn)\nBaseTest\\basetest.py:31: in click_element\n    self.search_element(loc).click()\nBaseTest\\basetest.py:18: in search_element\n    return WebDriverWait(self.driver,timeout).until(lambda x : x.find_element(*loc))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"02a6d3b2-3290-42eb-803b-d8a98d21a1fe\")>\nmethod = <function Base.search_element.<locals>.<lambda> at 0x011578E8>\nmessage = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n            return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\nc:\\users\\24568\\appdata\\local\\programs\\python\\python36-32\\lib\\site-packages\\selenium-2.48.0-py3.6.egg\\selenium\\webdriver\\support\\wait.py:80: TimeoutException",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JQSV3K"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "5068-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "Scritps.test_dev_login"
+  }, {
+    "name" : "testClass",
+    "value" : "Scritps.test_dev_login"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test_Dev_Login.test_failure[17778159086-12345-\\u767b\\u5f55]"
+  }, {
+    "name" : "package",
+    "value" : "Scritps.test_dev_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "7086c90f51557348.json",
+  "parameterValues" : [ ]
+}

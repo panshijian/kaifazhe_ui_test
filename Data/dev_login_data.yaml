@@ -1,0 +1,8 @@
+Dev_login:
+    - login_phone: {"phone":"17778159086","pwd":"123456","expect":"u553582"}
+    - login_phone: {"phone":"17778159086","pwd":"12345","expect":"登录"}
+#Dev_login:
+#  login_phone:
+#    phone: 17778159086
+#    pwd: 123456
+#    expect: u553582

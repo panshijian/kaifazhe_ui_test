@@ -1,0 +1,5 @@
+"Status","Name","Duration in ms","Description"
+"passed","Scritps.test_dev_login.Test_Dev_Login.test_login[17778159086-123456-u553582]","58421",""
+"failed","Scritps.test_dev_login.Test_Dev_Login.test_login[17778159086-12345-\u767b\u5f55]","54031",""
+"failed","Scritps.test_dev_login.Test_Dev_Login.test_failure[17778159086-123456-u553582]","30368",""
+"broken","Scritps.test_dev_login.Test_Dev_Login.test_failure[17778159086-12345-\u767b\u5f55]","56272",""

@@ -1,0 +1,66 @@
+{
+  "uid" : "ad7d9b04385af088",
+  "name" : "Test_Dev_Login.test_failure[17778159086-123456-u553582]",
+  "fullName" : "Scritps.test_dev_login.Test_Dev_Login.test_failure[17778159086-123456-u553582]",
+  "historyId" : "b5d5bbeabf74716e1a12f5c6ee442aba",
+  "time" : {
+    "start" : 1575789613061,
+    "stop" : 1575789643429,
+    "duration" : 30368
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "TimeoutException: Message: \n",
+  "statusTrace" : "self = <Scritps.test_dev_login.Test_Dev_Login object at 0x046A47F0>\nphone = '17778159086', pwd = '123456', expect = 'u553582'\n\n    @pytest.mark.parametrize(\"phone,pwd,expect\", get_data_yaml())\n    def test_failure(self,phone,pwd,expect):\n        # 使用 点击登录/注册 按钮方法\n>       self.DL.click_login_btn()\n\nScritps\\test_dev_login.py:54: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nPageTest\\dev_title.py:27: in click_login_btn\n    self.click_element(PageTest.login_btn)\nBaseTest\\basetest.py:31: in click_element\n    self.search_element(loc).click()\nBaseTest\\basetest.py:18: in search_element\n    return WebDriverWait(self.driver,timeout).until(lambda x : x.find_element(*loc))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"f1555107-135a-40bf-bb1f-d81bfc0c5b21\")>\nmethod = <function Base.search_element.<locals>.<lambda> at 0x046A3300>\nmessage = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n            return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\nc:\\users\\24568\\appdata\\local\\programs\\python\\python36-32\\lib\\site-packages\\selenium-2.48.0-py3.6.egg\\selenium\\webdriver\\support\\wait.py:80: TimeoutException",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2JQSV3K"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "5068-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "Scritps.test_dev_login"
+  }, {
+    "name" : "testClass",
+    "value" : "Scritps.test_dev_login"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test_Dev_Login.test_failure[17778159086-123456-u553582]"
+  }, {
+    "name" : "package",
+    "value" : "Scritps.test_dev_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "ad7d9b04385af088.json",
+  "parameterValues" : [ ]
+}
